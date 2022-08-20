@@ -25,11 +25,9 @@ pub mod pallet {
 	pub struct Pallet<T>(_);
 
 	// The pallet's runtime storage items.
-	// https://docs.substrate.io/v3/runtime/storage
 	#[pallet::storage]
 	#[pallet::getter(fn something)]
 	// Learn more about declaring storage items:
-	// https://docs.substrate.io/v3/runtime/storage#declaring-storage-items
 	pub type EntityCount<T> = StorageValue<_, u32>;
 
 	// Pallets use events to inform users when important changes are made.
